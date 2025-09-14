@@ -1,0 +1,57 @@
+<!--
+MIT License
+
+Copyright (c) 2024
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Getting Started:
+- Open this file in any modern browser.
+- Use the tabs at the top to navigate between Learn, Practice, and Progress.
+- Keyboard shortcuts: numbers 1-4 for answers, Enter for next question.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arabic Alphabet Trainer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Noto+Naskh+Arabic:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="tabs" role="tablist">
+      <a href="#learn" data-tab="learn" class="tab" role="tab">Learn</a>
+      <a href="#practice" data-tab="practice" class="tab" role="tab">Practice</a>
+      <a href="#progress" data-tab="progress" class="tab" role="tab">Progress</a>
+      <button id="lang-toggle" class="lang-toggle" aria-label="Toggle language">EN</button>
+    </nav>
+  </header>
+  <main>
+    <section id="learn" class="view" role="tabpanel"></section>
+    <section id="practice" class="view" role="tabpanel" hidden></section>
+    <section id="progress" class="view" role="tabpanel" hidden></section>
+  </main>
+  <script type="module" src="data/letters.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
